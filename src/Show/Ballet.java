@@ -11,6 +11,13 @@ public class Ballet extends  MusicalShow {
         this.choreographer = choreographer;
     }
 
+    public Person getChoreographer() {
+        return choreographer;
+    }
+
+    public void setChoreographer(Person choreographer) {
+        this.choreographer = choreographer;
+    }
 
     @Override
     public String toString() {
@@ -18,4 +25,3 @@ public class Ballet extends  MusicalShow {
                 "\nХореограф: " + choreographer + ";";
     }
 }
-

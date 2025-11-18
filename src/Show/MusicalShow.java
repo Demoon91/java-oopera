@@ -13,6 +13,14 @@ public class MusicalShow extends Show {
         this.librettoText = librettoText;
     }
 
+    public Person getMusicAuthor() {
+        return musicAuthor;
+    }
+
+    public void setMusicAuthor(Person musicAuthor) {
+        this.musicAuthor = musicAuthor;
+    }
+
     public String getLibrettoText() {
         return librettoText;
     }
@@ -27,7 +35,8 @@ public class MusicalShow extends Show {
 
     @Override
     public String toString() {
-        return  super.toString() +
+        return super.toString() +
                 "\nАвтор музыки: " + musicAuthor;
     }
 }
+
