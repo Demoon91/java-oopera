@@ -3,7 +3,7 @@ package Person;
 public class Person {
     protected String name;
     protected String surname;
-    protected Gender gender;
+    protected PersonGender gender;
 
 
     public Person(String name, String surname) {
@@ -27,17 +27,17 @@ public class Person {
         this.surname = surname;
     }
 
-    public Gender getGender() {
+    public PersonGender getGender() {
         return gender;
     }
 
-    public void setGender(Gender gender) {
+    public void setGender(PersonGender gender) {
         this.gender = gender;
     }
 
-    enum Gender {
-        MALE,
-        FEMALE
+    @Override
+    public String toString() {
+        return  name + ' ' + surname;
     }
 }
 

@@ -57,6 +57,7 @@ public class Show {
     }
 
     public void changeActor (Actor newActor, String chSurname) {
+
         boolean actorRemoved = listOfActors.removeIf(actor -> chSurname.equals(actor.getSurname()));
 
         if (actorRemoved) {
